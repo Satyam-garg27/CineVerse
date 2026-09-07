@@ -238,3 +238,81 @@ body{
         right: 20px;
     }
 }
+.site-footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #0b0c10;
+    border-top: 1px solid #252832;
+    color: #8b8e99;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.copyright {
+    color: #e6e6e6;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.creator a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.creator a:hover {
+    color: #ff3038;
+    text-decoration: underline;
+}
+
+.tmdb-credit {
+    margin: 22px auto 0;
+    max-width: 650px;
+    padding-top: 20px;
+    border-top: 1px solid #20222a;
+}
+
+.tmdb-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.tmdb-credit p {
+    color: #686b76;
+    font-size: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    padding: 10px 20px;
+}
+
+.logo-icon {
+    font-size: 27px;
+}
+
+.logo-text {
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: #e50914;
+}
+
+.logo:hover {
+    color: #ffffff;
+}

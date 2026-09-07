@@ -1,4 +1,3 @@
-const API_KEY = `ab58f840b0281af1e08407c6e8eabcd3`;
 const image_path = `https://image.tmdb.org/t/p/w1280`;
 const trailer_path = `https://www.youtube.com/watch?v=`;
 
