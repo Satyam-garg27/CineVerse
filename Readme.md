@@ -70,35 +70,6 @@ Movie Data
 Favorites are stored locally in the user's browser using **LocalStorage**.
 
 ---
-
-## 💻 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Satyam-garg27/CineVerse.git
-```
-
-### 2. Open the project
-
-Navigate into the project folder:
-
-```bash
-cd CineVerse
-```
-
-### 3. Add your TMDB API key
-
-Create the local configuration file required by the application and add your TMDB API key.
-
-> **Important:** Do not commit your API key or other credentials to GitHub.
-
-### 4. Run the project
-
-Since CineVerse is built using vanilla HTML, CSS, and JavaScript, you can open it using **VS Code Live Server** or another local development server.
-
----
-
 ## 📸 Screenshots
 
 _Add screenshots of the CineVerse interface here._
