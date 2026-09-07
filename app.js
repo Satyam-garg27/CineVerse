@@ -18,10 +18,11 @@ function add_click_effect_to_card(cards) {
 }
 
 async function get_movie_by_search(search_term) {
-    const resp = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search_term}`);
+    const resp = await fetch(
+        `/api/search?query=${encodeURIComponent(search_term)}`
+    );
 
     const respData = await resp.json();
-    console.log(respData.results);
     return respData.results;
 }
 
@@ -60,15 +61,18 @@ async function add_searched_movies_to_dom() {
 
 
 async function get_movie_by_id(id) {
-    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
-    const respData = await resp.json()
-    return respData
+    const resp = await fetch(`/api/movie?id=${id}`);
+
+    const respData = await resp.json();
+    return respData;
 }
 
 async function get_movie_trailer(id) {
-    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
-    const respData = await resp.json()
-    return respData.results[0].key
+    const resp = await fetch(`/api/videos?id=${id}`);
+
+    const respData = await resp.json();
+
+    return respData.results[0]?.key;
 }
 
 
@@ -241,13 +245,12 @@ function add_favorites_to_dom_from_LS(movie_data) {
     add_click_effect_to_card(cards)
 }
 
-get_trending_movies()
 async function get_trending_movies() {
-    const resp = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}`)
-    const respData = await resp.json()
-    return respData.results
-}
+    const resp = await fetch("/api/trending");
 
+    const respData = await resp.json();
+    return respData.results;
+}
 add_to_dom_trending()
 async function add_to_dom_trending() {
 
